@@ -1,0 +1,10 @@
+METHOD 1 FOR IMPLEMENTING THE VISION PART:
+- Using array to represent grid, select 2 or 3 candidate positions per boardstate.
+The candidate positions are based on the shape of a 3-5 wide section of the board, 
+given a per setup value depending on how easy it is to build the setup from that shape. 
+These shape values should be precalculated based on the setup. For example, the procedure
+to add imperial cross to the setup list would be to first calculate the best shapes leading
+into imp cross. SO, NEED TO MAKE A TOOL TO CALCULATE BEST SHAPES FOR EACH SETUP.
+
+If i generate these best shapes for each setup using a backtracking procedure, each shape could
+have its own set of pieces that directly create the setup. maybe. ok! done.
